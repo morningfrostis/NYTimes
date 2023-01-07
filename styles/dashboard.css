@@ -1,0 +1,98 @@
+html body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding-left: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: namata medium;
+    padding-top: 10px;
+    font-weight: bolder;
+}
+
+.best {
+    background-color: black;
+    max-width: 84%;
+}
+
+h3 {
+    font-family: namata medium;
+    color: rgb(52, 52, 52);
+    margin-top: 10px;
+    font-size: 30px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.sellers {
+    text-align: right;
+    padding-right: 15px;
+    font-size: 80px;
+    font-family: impact;
+    color: white;
+}
+
+.r {
+    font-size: 0.3em;
+}
+
+.containerId {
+    display: flex;
+}
+
+.card {
+    --bs-card-border-radius: none;
+}
+
+.btn {
+    --bs-btn-border-radius: none;
+}
+
+.subContainerId {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    /* centrar vertical y horizontalmente */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
+}
+
+#listBooksId {
+    font-family: araboto-normal;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 100px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    justify-content: center;
+}
+
+div#listBooksChildId.listBooksChild {
+    height: 280px;
+    width: 280px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    box-shadow: 0 0 8px grey;
+    font-family: araboto-normal;
+}
+
+a#divButtonId {
+    border: none;
+    padding: 5px;
+    box-shadow: 0 0 8px grey;
+    font-family: araboto-normal;
+    text-decoration: none;
+    color: rgb(71, 71, 71);
+}

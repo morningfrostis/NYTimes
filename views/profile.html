@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/profile.css">
+    <script src="/services/firebase.js" type="module"></script>
+    <script src="/services/profile.js" type="module"></script>
+    <script src="/services/logout.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/e4dbc69f0a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="../assets/logonavbar.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link userLogged btn btn-secondary" href="#" id="userLogged">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link logged-in btn btn-primary" href="#" id="logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <h1>New York Times <g class="r">®</g>
+        </h1>
+        <div class="best">
+            <h2 class="sellers">Your Favorites Books</h2>
+        </div>
+        <div>
+            <h3 id="userWelcome"></h3>
+        </div>
+    </header>
+
+    <div class="boton">
+        <button class="buttonBack" value="Back" onclick="history.back()">
+            BACK TO INDEX
+        </button>
+    </div>
+
+    <div class="container" id="container">
+        <div class="row" id="row"></div>
+    </div>
+</body>
+</html>

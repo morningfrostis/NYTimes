@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/dashboard.css">
+    <script defer src="/services/dashboard.js"></script>
+    <script defer src="/services/index.js" type="module"></script>
+    <script src="/services/main.js" type="module"></script>
+    <script src="/services/logout.js" type="module"></script>
+    <script src="/services/gotoProfile.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/e4dbc69f0a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--<div id="container_spinner">
+        <div class="loader" id="spinner">
+            <div class="loader-bg">
+                <span>LOADING NYTimes</span>
+            </div>
+            <div class="drops">
+                <div class="drop1"></div>
+                <div class="drop2"></div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="liquid">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                        result="liquid" />
+                </filter>
+            </defs>
+        </svg>
+    </div>-->
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="../assets/logonavbar.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link userLogged fa-regular fa-address-card" id="userLogged">  Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link logged-in fa-solid fa-right-from-bracket" id="logout">  Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>New York Times <g class="r">®</g>
+        </h1>
+        <div class="best">
+            <h2 class="sellers">Best Sellers</h2>
+        </div>
+    </header>
+
+    <div class="container" id="container">
+        <div class="row" id="row">
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

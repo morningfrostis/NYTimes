@@ -1,0 +1,68 @@
+html body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding-left: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: namata medium;
+    padding-top: 10px;
+    font-weight: bolder;
+}
+
+.best {
+    background-color: black;
+    max-width: 84%;
+}
+
+h3 {
+    font-family: namata medium;
+    color: rgb(52, 52, 52);
+    margin-top: 10px;
+    font-size: 30px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.sellers {
+    text-align: right;
+    padding-right: 15px;
+    font-size: 80px;
+    font-family: impact;
+    color: white;
+}
+
+.r {
+    font-size: 0.3em;
+}
+
+.containerId {
+    display: flex;
+}
+
+.buttonBack {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-family: oswald;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: red;
+    border: none;
+    box-shadow: 2px 2px #999;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+

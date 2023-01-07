@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/details.css">
+</head>
+
+<body>
+    <!-- ****************** Mostrar menú diferente una vez logueado - Profile & Logout ******************-->
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="../assets/logonavbar.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link userLogged fa-regular fa-address-card" id="userLogged">  Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link logged-in fa-solid fa-right-from-bracket" id="logout">  Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ****************** fin menú una vez logueado **************-->
+
+    <!-- ****************** Cabecera responsive - IVAN - ya veré si la uso o la reahago yo **************-->
+    <header>
+        <h1>New York Times <g class="r">®</g>
+        </h1>
+        <div class="best">
+            <h2 class="sellers">Best Sellers</h2>
+        </div>
+        <div>
+            <h3 id="nameCategoryBooks"></h3>
+        </div>
+    </header>
+    <!-- ****************** fin cabecera responsive IVAN **************-->
+
+
+    <div class="boton">
+        <button class="buttonBack" value="Back" onclick="history.back()">
+            BACK TO INDEX
+        </button>
+    </div>
+
+    <div class="container" id="container">
+        <div class="row" id="row"></div>
+    </div>
+
+    <script src="/services/dashboard.js" type="module"></script>
+    <script defer src="/services/firebase.js" type="module"></script>
+    <script src="/services/details.js" type="module"></script>
+    <script src="/services/main.js" type="module"></script>
+    <script src="/services/logout.js" type="module"></script>
+    <script src="/services/gotoProfile.js" type="module"></script>
+    <script src="/services/index.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/e4dbc69f0a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

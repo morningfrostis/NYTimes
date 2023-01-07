@@ -1,0 +1,70 @@
+header {
+    padding-left: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: namata medium;
+    padding-top: 10px;
+    font-weight: bolder;
+}
+
+.best {
+    background-color: black;
+    max-width: 84%;
+}
+
+h3 {
+    font-family: namata medium;
+    color: rgb(52, 52, 52);
+    margin-top: 10px;
+    font-size: 30px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.sellers {
+    text-align: right;
+    padding-right: 15px;
+    font-size: 80px;
+    font-family: impact;
+    color: white;
+}
+
+.r {
+    font-size: 0.3em;
+}
+
+.buttonBack {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-family: oswald;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: red;
+    border: none;
+    box-shadow: 2px 2px #999;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.imgFav {
+    background-image: url('../assets/heartEmpty.png');
+    /*background-color: rgb(222, 221, 221);*/
+    border-radius: 5px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 8px;
+    right: 4px;
+    border: 0;
+    cursor: pointer;
+    z-index: 1;
+}
