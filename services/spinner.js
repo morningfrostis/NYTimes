@@ -1,3 +1,7 @@
+/**
+ * ¿Este archivo está en uso?
+ */
+
 // function redireccionar(){
 //     window.location.href="/views/dashboard.html";
 //     //Usaremos login.html cuando todo funcione

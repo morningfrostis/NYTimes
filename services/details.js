@@ -19,10 +19,18 @@ if (categoria) {
     window.location.href = "dashboard.html";
 }
 function display(data, favs) {
+    /**
+     * Corrección
+     * console.log sobra
+     */
     console.log(data.results)
     booksByCategory.innerHTML = '';
     nameCategory.innerHTML = `Best Sellers in ${categoria}`
 
+    /**
+     * Corrección
+     * Deberíamos usar un FOR..OF
+     */
     for (let i = 0; i < data.results.books.length; i++) {
         // Pintamos en el DOM los elementos de cada libro de la categoría solicitada
 

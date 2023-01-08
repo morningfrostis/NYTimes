@@ -6,9 +6,17 @@ getFavs().then((favs) => {
 })
 
 function display(data) {
+    /**
+     * Corrección
+     * Console.log sobra
+     */
     console.log(data.results)
     booksByCategory.innerHTML = '';
 
+    /**
+     * Corrección
+     * Deberíamos usar un FOR..OF
+     */
     for (let i = 0; i < data.length; i++) {
         // Pintamos en el DOM igual que en la vista de details pero esta vez solo los Favoritos
         const item = data[i]
@@ -48,6 +56,10 @@ function display(data) {
         buttonAmazon.setAttribute("class", "card-link btn btn-warning")
 
         // Añado estos elementos al body de cada card favoritos
+        /**
+         * Corrección
+         * Recuerda que tenemos un .append que añade un array de childs
+         */
         divCardBody.appendChild(name)
         divCardBody.appendChild(buttonFav)
         divCardBody.appendChild(img)

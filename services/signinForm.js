@@ -22,6 +22,10 @@ if (siginForm) {
 
         } catch (error) {
             console.log(error)
+            /**
+             * Corrección
+             * Deberíamos usar en este caso un switch
+             */
             if (error.code === 'auth/wrong-password') {
                 alert('Wrong password')
             } else if (error.code === 'auth/user-not-found') {
