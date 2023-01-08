@@ -42,12 +42,20 @@
         <div class="modal-dialog">
             <div class="modal-content bg-dark">
                 <div class="modal-header">
+                    <!--
+                        --CORRECCIÓN--
+                        El "id" de la etiqueta h1 está repetida en el modal del Signup,
+                        puede generar comportamientos inesperados en el DOM
+                     -->
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Signin</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form id="login-form">
-
+                        <!--
+                           --CORRECCIÓN--
+                           El parámetro "for" de la etiqueta label debe estar asociado al parámetro "id" del input
+                         -->
                         <label for="email">Email:</label>
                         <input type="email" id="login-email" class="form-control mb-3" placeholder="Email" required>
 
@@ -82,12 +90,20 @@
         <div class="modal-dialog">
             <div class="modal-content bg-dark">
                 <div class="modal-header">
+                    <!--
+                       --CORRECCIÓN--
+                       El "id" de la etiqueta h1 está repetida en el modal del SignIn,
+                       puede generar comportamientos inesperados en el DOM
+                    -->
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Signup</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form id="signup-form">
-
+                        <!--
+                           --CORRECCIÓN--
+                           El parámetro "for" de la etiqueta label debe estar asociado al parámetro "id" del input
+                         -->
                         <label for="email">Email:</label>
                         <input type="email" id="signup-email" class="form-control mb-3" placeholder="Email" required>
 
@@ -123,6 +139,10 @@
                         </span>Login
                     </a>
                     <a class="btn btn-secondary display-4" data-bs-toggle="modal" data-bs-target="#signupModal">
+                        <!--
+                           --CORRECCIÓN--
+                           Sobra la etiqueta span
+                         -->
                         <span></span>Register
                     </a>
                 </div>

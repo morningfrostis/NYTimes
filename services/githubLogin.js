@@ -9,6 +9,10 @@ if (githubButton) {
 
         try {
             const credentials = await signInWithPopup(auth, provider)
+            /**
+             * Corrección
+             * console.log sobra
+             */
             console.log(credentials)
 
             const modal = bootstrap.Modal.getInstance(document.querySelector('#signinModal'))

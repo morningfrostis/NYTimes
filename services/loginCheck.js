@@ -11,6 +11,10 @@ export const loginCheck = user => {
     if (user) {
         loggedInLinks.forEach(link => link.style.display = 'block')
         loggedOutLinks.forEach(link => link.style.display = 'none')
+        /**
+         * Corrección
+         * El display que buscas es inherit
+         */
         userLogged.forEach(link => link.style.display = 'block')
     } else {
         userLogged.forEach(link => link.style.display = 'none')

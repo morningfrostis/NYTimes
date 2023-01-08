@@ -19,7 +19,10 @@ const fetchCategoryBooks = async () => {
             console.log(error);
         }
     }else{
-
+        /**
+         * Corrección
+         * Si no vas a hacer nada, deberías eliminar este "else"
+         */
         //document.getElementById('container_spinner').style.display = "none";
     }
     return values

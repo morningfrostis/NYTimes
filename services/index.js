@@ -6,6 +6,10 @@ const LOCALSTORAGE_NY = 'id_categoria'
 async function postAllData() {
         allBooks.innerHTML = '';
         const listCategory = await fetchCategoryBooks()
+        /**
+         * Corrección
+         * Deberíamos usar un FOR..OF
+         */
         for (let i = 0; i < listCategory.length; i++) {
 
                 const item = listCategory[i]

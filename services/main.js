@@ -13,6 +13,10 @@ import './logout.js'
 
 
 onAuthStateChanged(auth, async (user) => {
+    /**
+     * Corrección
+     * console.log sobra
+     */
     console.log(user)
     loginCheck(user)
     //if (user) {

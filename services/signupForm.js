@@ -9,6 +9,10 @@ if (signupForm) {
         const email = signupForm['signup-email'].value
         const password = signupForm['signup-password'].value
 
+        /**
+         * Corrección
+         * Este console.log sobra
+         */
         console.log(email, password)
 
         try {
@@ -26,6 +30,10 @@ if (signupForm) {
         } catch (error) {
             console.log(error.message)
             console.log(error.code)
+            /**
+             * Corrección
+             * Deberíamos usar en este caso un switch
+             */
             if (error.code === 'auth/email-already-in-use') {
                 alert('Email already in use')
             }
